@@ -17,7 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
+from storage.views.game import GameViewSet
+from storage.views.player import PlayerViewSet
+from storage.views.team import TeamViewSet
+
 router = routers.DefaultRouter()
+
+router.register(r'game', GameViewSet)
+router.register(r'team', TeamViewSet)
+router.register(r'player', PlayerViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
