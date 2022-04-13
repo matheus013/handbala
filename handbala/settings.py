@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'handbala.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dcs6jcdbesbead',
+        'USER': 'dhusnfklndbrcd',
+        'PASSWORD': '478e3232bd2d5c985c571d1a4c44aff51b5b5609e861f9899f4629bb267789ce',
+        'HOST': 'ec2-34-207-12-160.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
